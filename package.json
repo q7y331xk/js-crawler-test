@@ -1,0 +1,11 @@
+{
+  "name": "js-crawler-test",
+  "version": "1.0.0",
+  "description": "js crawler test",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "dulee.dev@gmail.com",
+  "license": "ISC"
+}
