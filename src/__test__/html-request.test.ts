@@ -1,4 +1,5 @@
 import axios from 'axios';
+import fs from 'fs';
 
 /**
  * target url을 읽어와서, 실제로 제목이 있는지 확인
@@ -10,6 +11,7 @@ const TARGET_TITLE = '브라질 머리 hd 레이스 정면 가발, 흑인 여성
 describe('html  request', () => {
   test(`crawling with ${TARGET_URL}\nmatch title`, async () => {
     const { data } = await axios.get(TARGET_URL);
+    fs.writeFileSync('./persistence/html-request', data)
     expect(data).toMatch(`${TARGET_TITLE}`);
   })
 })

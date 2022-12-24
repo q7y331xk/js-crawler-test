@@ -10,6 +10,7 @@ const config: Config = {
   testEnvironment: "node",
   resetMocks: true,
   clearMocks: true,
+  testTimeout: 60 * 1000
 }
 
 export default config;
